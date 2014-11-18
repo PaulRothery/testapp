@@ -31,14 +31,15 @@ public class AddReview {
 			
 		System.out.println("Enter year:");
 		wine.setYear(scanner.nextInt());   
-		
+		scanner.nextLine();   
+	
 		System.out.println("Enter price:");
-		wine.setPrice(scanner.next());   
+		wine.setPrice(scanner.nextLine());   
 		
 		System.out.println(wine.toString() + " : Added");
 		
 		System.out.println("Enter another wine (Y/N):");			
-		another = scanner.next();
+		another = scanner.nextLine();
 		return another;
 	}
 }
